@@ -1,0 +1,162 @@
+body /*style pour toute la page*/
+{
+	margin: 5px 10px 5px 10px;
+	font-size: 17px;
+	font-family: 'Trebuchet MS';
+}
+
+/*HEADER*/
+a, li /*modifications des styles par défaut des liens et des puces*/
+{
+	text-decoration: none;
+	list-style-type: none;
+}
+
+header /*alignement de la contenu de l'entête sur une ligne*/
+{
+	display: flex;
+	flex-direction: row;
+	border-bottom: 2px solid rgb(223, 20, 20);
+}
+
+header figure /*agrandissement de la largeur occupé par le logo et poussé les menus vers la droite*/
+{
+	flex: 3;
+}
+header .menu /*on diminue la largeur occupé par le bloc .menu*/
+{
+	flex: 3;
+}
+
+header .menu ul /*on rend la balise UL dans le bloc .menu flexible et on le change de direction liéaire*/
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 100px; /*on les descend*/
+	padding-right: 20px; /*on décale un peu de la droite*/
+}
+
+header .menu a /*modification des liens comme la couleur et la taille de la police*/
+{
+	color: rgb(223, 20, 20);
+	font-size: 30px; /*taille de la police*/
+}
+
+header .menu a:hover /*les styles des menus au survol de la souris*/
+{
+	text-decoration: underline;
+	opacity: 0.7;
+}
+
+
+/*EQUIPE*/
+.conteneur-principal
+{
+	margin: 100px 30px 0px 70px;
+
+}
+.conteneur-principal p /*mise en place des informations des developpeurs*/
+{
+	border: 1px solid rgb(223, 20, 20);
+	position: relative;
+	top: 126px;
+	width: 250px;
+	margin-right: 20px;
+	margin-left: 5px;
+	padding-left: 5px;
+	background-color: rgba(223, 20, 20, 0.9);
+}
+
+.conteneur-principal .top-content h2 /*on décale un peu de la gauche le titre afin de bien l'aligné avec les images*/
+{
+	padding-left: 40px;
+	padding-bottom: 20px;
+}
+
+/*on ajoute des espacements entre les images en rendant le blox equipe flexible*/
+.conteneur-principal .top-content .equipe, .conteneur-principal .center-content .equipe
+{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 200px;
+}
+
+.conteneur-principal .bottom-content .equipe /*idem mais seulement pour les 2 derniers images*/
+{
+	display: flex;
+	justify-content: space-between;
+	padding-right: 250px; /*pousser un peu à gauche*/
+	padding-bottom: 170px;
+}
+
+.conteneur-principal span /*personnalisation des Prénoms*/
+{	
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+
+/*FOOTER*/
+footer /*transormation du blow footer flexible et ajout d'une marge intérieur à droite*/
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: rgba(223, 20, 20, 0.8);
+}
+
+
+footer .social-network /*on ajoute une marge intérieur*/
+{
+	border: 1px solid rgba(223, 20, 20, 1);
+	padding: 140px 0px 0px 0px;
+	flex: 2;
+}
+
+footer .social-network a /*on ajoute un espacement entre les liens*/
+{
+	padding-right: 20px;
+}
+
+footer .social-network a:hover /*images des réseaux sociaux au survol de la souris*/
+{
+	opacity: 0.5;
+}
+
+/*mise en place du bloc logo et du copyright*/
+footer .logo 
+{
+	flex: 1;
+	border: 1px solid rgba(223, 20, 20, 1);
+}
+footer .logo h5
+{
+	text-align: center;
+}
+
+/*mise en place du bloc contact*/
+footer .contact
+{
+	flex: 2;
+	border: 1px solid rgba(223, 20, 20, 1);
+	padding: 97px 0px 0px 95px;
+}
+
+footer .contact a /*personnalisation des couleurs des liens dans le bloc contact*/
+{
+	color: black;
+	font-family: "Comic Sans MS";
+}
+
+footer .contact a:hover /*les images des contacts au survol de la souris*/
+{
+	opacity: 0.6;
+}
+
+footer .contact .c-e-l /*personnalisation des 3 lettres C E L*/
+{
+	color: red;
+	font-size: 1.8em;
+}
